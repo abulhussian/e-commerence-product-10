@@ -216,12 +216,12 @@ closelg.addEventListener("click", function (e) {
   lighthouse.classList.add("hidden");
 });
 
-slides.forEach((sl) => {
-  console.log(sl);
-  sl.addEventListener("click", function (e) {
-    lighthouse.classList.remove("hidden");
-  });
-});
+// slides.forEach((sl) => {
+//   console.log(sl);
+//   sl.addEventListener("click", function (e) {
+//     lighthouse.classList.remove("hidden");
+//   });
+// });
 
 function updateTotal(value) {
   number.textContent = value;
