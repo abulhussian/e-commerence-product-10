@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./ecommerce-product-page-main/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+</head>
+
+<body class="bg-paleOrange mx-auto overflow-x-hidden">
+  <div class="flex flex-col md:px-32 border-b">
+    <!-- header -->
+    <header class=" flex flex-row justify-between mt-5 px-2  ">
+      <div class="flex flex-row gap-5  ">
+        <!-- index -->
+        <img src="./ecommerce-product-page-main/images/icon-menu.svg" alt="icon-menu"
+          class="w-5 h-5 md:hidden block menu-box">
+        <div class="logo-box flex flex-row gap-7">
+          <!-- logo -->
+          <img src="./ecommerce-product-page-main/images/logo.svg" alt="logo" class="h-5">
+          <div class="options  md:flex hidden flex-row gap-7  ">
+            <!-- collections -->
+            <a href="#" class="collections text-grayishBlue border-b pb-6 hover:border-b-orange ">Collections</a>
+            <!-- men -->
+            <a href="#" class="men text-grayishBlue hover:border-b pb-6 hover:border-b-orange ">Men</a>
+            <!-- women -->
+            <a href="#" class=" women text-grayishBlue hover:border-b pb-6 hover:border-b-orange">Women</a>
+            <!-- about -->
+            <a href="#" class=" about text-grayishBlue hover:border-b pb-6 hover:border-b-orange">About</a>
+            <!-- contact -->
+            <a href="#" class=" conatct text-grayishBlue hover:border-b pb-6 hover:border-b-orange">Contact</a>
+
+          </div>
+        </div>
+      </div>
+      <div class="avatar flex flex-row gap-2">
+        <!-- cart img -->
+        <img src="./ecommerce-product-page-main/images/icon-cart.svg" alt="icon-cart"
+          class=" img-cart w-5 h-5 relative">
+        <div
+          class="bg-orange absolute top-2 cart-number hidden flex justify-center items-center text-white w-4 h-4 rounded-full">
+          <p class=" text-xs">1</p>
+        </div>
+        <!-- avtar img -->
+        <div
+          class="avatr-img w-7 h-7 rounded-full hover:border-2 hover: border-orange flex justify-center items-center">
+          <img src="./ecommerce-product-page-main/images/image-avatar.png" alt="icon-cart" class="w-7 h-7 ">
+        </div>
+
+      </div>
+
+    </header>
+  </div>
+
+  <div class="conatiner flex flex-col mx-auto  max-w-3xl  rounded-lg  ">
+    <div class="mobile-menu md:hidden block hidden absolute top-0 w-1/2 flex flex-col bg-white h-screen p-3 z-50">
+      <div class="close-mobile">
+        <img src="./ecommerce-product-page-main/images/icon-close.svg" alt="icon-close" class="w-5 h-5">
+      </div>
+      <div class="options  flex flex-col mt-10 gap-3 ">
+        <h1 class="text-veryDarkBlue font-semibold">Collections</h1>
+        <h1 class="text-veryDarkBlue font-semibold">Men</h1>
+        <h1 class="text-veryDarkBlue font-semibold">Women</h1>
+        <h1 class="text-veryDarkBlue font-semibold">About</h1>
+        <h1 class="text-veryDarkBlue font-semibold">Contact</h1>
+      </div>
+
+    </div>
+
+
+    <section class="flex md:flex-row flex-col mt-2 md:mt-7 gap-5 md:gap-20  ">
+      <div class="left-section flex flex-col z-0 ">
+        <!-- large-images -->
+        <div class="slider w-screen h-screen md:w-80 md:h-80 
+         relative flex flex-row overflow-hidden -z-10 ">
+          <div class="absolute w-[320px] h-[320px] md:block hidden overlay-lg z-50 "></div>
+          <!-- display image-1 -->
+          <img src="./ecommerce-product-page-main/images/image-product-1.jpg" alt="product-1-img" class="md:w-screen w-screen slide
+             md:rounded-lg  display-image -z-10 absolute top-0">
+          <!-- display image-2 -->
+          <img src="./ecommerce-product-page-main/images/image-product-2.jpg" alt="product-2-img"
+            class="md:max-w-xs w-full -z-10  slide md:rounded-lg display-image absolute top-0">
+          <!-- display image-3 -->
+          <img src="./ecommerce-product-page-main/images/image-product-3.jpg" alt="product-3-img"
+            class="md:max-w-xs w-full -z-10 md:rounded-lg slide display-image absolute top-0">
+          <!-- display image-4 -->
+          <img src="./ecommerce-product-page-main/images/image-product-4.jpg" alt="product-4-img"
+            class="md:max-w-xs w-full -z-10 md:rounded-lg  slide display-image  top-0">
+
+          <button
+            class=" md:hidden cursor-pointer  absolute left-slide-btn top-1/2 left-10    w-8 h-8 rounded-full bg-white flex justify-center  items-center -translate-x-1/2 ">
+            <img src="./ecommerce-product-page-main/images/icon-next.svg" alt="icon-next"
+              class="w-5 h-5 rotate-180 z-0 ">
+          </button>
+          <button
+            class=" md:hidden cursor-pointer absolute right-slide-btn  top-1/2 right-10 w-8 h-8 rounded-full bg-white flex justify-center  items-center -translate-x-1/2 ">
+            <img src="./ecommerce-product-page-main/images/icon-next.svg" alt="icon-next" class="w-5 h-5 z-0
+           ">
+          </button>
+        </div>
+
+
+
+        <!--Thumbnail images  -->
+        <div class="thumbnail-images md:flex hidden flex-row gap-5 mt-7">
+        </div>
+        <!-- right side -->
+      </div>
+      <div class="right-section flex flex-col mt-3 md:mt-6 p-5">
+        <!-- para -->
+
+        <p class="text-darkGrayishBlue tracking-widest">Sneaker Company</p>
+        <!-- heading -->
+        <h1 class="text-veryDarkBlue max-w-md text-3xl font-semibold mt-2">Fall Limited Edition Sneakers</h1>
+        <!-- text -->
+        <p class="text-darkGrayishBlue md:w-96 w-80 mt-3">These low-profile sneakers are your perfect casual
+          wearcompanion.Featuring durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+        <!-- price -->
+        <div class=" flex flex-row gap-4  items-center  ">
+          <!-- price number -->
+          <p class="text-veryDarkBlue text-3xl font-bold mt-3">$<span class="price">125.00</span></p>
+          <!-- offer percentage -->
+          <div class="offer mt-3 bg-veryDarkBlue flex justify-center w-10 h-5 rounded-md items-center text-center">
+            <p class="text-white font-semibold ">50%</p>
+          </div>
+        </div>
+
+        <!-- old price -->
+        <p class="text-veryDarkBlue text-xl font-bold mt-2 line-through">$250.00</p>
+        <div class="qty-btns flex flex-col  md:flex-row gap-3 md:gap-10 justify-center items-center md:w-96  w-full">
+          <!-- qty box -->
+          <div
+            class="qty flex flex-row gap-10 mt-5 bg-lightGrayishBlue px-24 py-3 md:p-3 md:w-52 w-full justify-center  items-center rounded-md">
+            <!-- minus img -->
+            <img src="./ecommerce-product-page-main/images/icon-minus.svg" alt="icon-minus" class="w-3 h-1 minus-icon">
+            <!-- text -->
+            <p class="text-veryDarkBlue text-md font-semibold text">0</p>
+            <!-- plus img -->
+            <img src="./ecommerce-product-page-main/images/icon-plus.svg" alt="icon-minus" class="w-3 h-3 plus-icon">
+          </div>
+          <!-- add to cat button -->
+          <div class=" mt-5  w-full">
+            <button
+              class="bg-orange add-to-cart-btn   md:px-10 flex flex-row gap-3 rounded-md  w-full py-3 items-center justify-center md:py-2 hover:opacity-75 text-veryDarkBlue"><img
+                src="./ecommerce-product-page-main/images/icon-cart.svg" alt="icon-cart ">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- empty cart -->
+    <div class="  cart-card absolute top-20 md:right-20 md:w-96 w-full bg-white rounded-lg  ">
+      <div class="empty-card hidden">
+        <div class="heading">
+          <!-- heading -->
+          <h1 class="text-veryDarkBlue font-semibold mt-4 p-3">Cart</h1>
+        </div>
+        <hr class="mt-2">
+        <div class="  empty-card flex justify-center items-center mt-8 p-10">
+          <p class="text-grayishBlue">Your cart is empty</p>
+        </div>
+      </div>
+      <div class="cart-filling hidden  p-5 flex flex-col">
+        <div class="adding-to-cart flex flex-row gap-3">
+          <!-- bill photo  -->
+          <img src="./ecommerce-product-page-main/images/image-product-1-thumbnail.jpg" alt="thumbnail-images"
+            class="w-14 h-14 rounded-md">
+
+          <div class="flex flex-col">
+
+            <!-- item name -->
+            <h1 class="text-grayishBlue w-full">Fall Limited Edition Sneakers</h1>
+            <div class="flex flex-row">
+              <div class=" flex flex-row gap-5">
+
+                <!-- price -->
+                <p class="text-grayishBlue">$125.00 </p>
+                <!-- qunatity -->
+                <p class="text-grayishBlue qty-item">x0</p>
+                <!-- total -->
+                <p class="text-veryDarkBlue total-price">$00.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- delete -->
+          <img src="./ecommerce-product-page-main/images/icon-delete.svg" alt="icon-delete" class="w-5 h-5 delete-icon">
+        </div>
+        <div class=" p-1 mt-5">
+          <!-- checkout btn -->
+          <button class="bg-orange checkout w-full px-14 py-3 text-veryDarkBlue rounded-lg ">Checkout</button>
+        </div>
+
+      </div>
+
+
+
+    </div>
+    <!-- lighthouse card -->
+    <div
+      class="flex lighthouse hidden  flex-col  md:bg-black md:bg-opacity-75 left-0 -z-0  absolute top-0 h-screen w-screen ">
+      <div class=" flex flex-col mx-auto  mt-20 w-80 relative      ">
+        <button
+          class="  cursor-pointer absolute z-50 left-slide-btnlg left-0 top-1/3  w-8 h-8 rounded-full bg-white flex justify-center  items-center -translate-x-1/2 translate-y-1/2 ">
+          <img src="./ecommerce-product-page-main/images/icon-next.svg" alt="icon-next" class="w-5 h-5 rotate-180  ">
+        </button>
+        <button
+          class="  cursor-pointer absolute right-slide-btnlg top-1/3 right-0 z-50   w-8 h-8 rounded-full bg-white flex justify-center  items-center translate-x-1/2 translate-y-1/2">
+          <img src="./ecommerce-product-page-main/images/icon-next.svg" alt="icon-next" class="w-5 h-5
+       ">
+        </button>
+
+        <img src="./ecommerce-product-page-main/images/icon-close.svg" alt="close"
+          class="w-6 h-6 absolute -top-10 -translate-x-1/2 right-0  z-10 close-lg">
+
+        <!-- large-images -->
+        <div class="sliderlg w-screen h-screen md:w-80 md:h-80 
+       relative flex flex-row overflow-hidden  ">
+
+          <!-- display image-1 -->
+          <img src="./ecommerce-product-page-main/images/image-product-1.jpg" alt="product-1-img" class="md:w-screen w-screen slidelg
+           md:rounded-lg  display-imagelg-1 absolute top-0 z-0">
+          <!-- display image-2 -->
+          <img src="./ecommerce-product-page-main/images/image-product-2.jpg" alt="product-2-img"
+            class="md:max-w-xs w-full   slidelg md:rounded-lg display-imagelg-2 absolute top-0 z-0">
+
+          <!-- display image-3 -->
+          <img src="./ecommerce-product-page-main/images/image-product-3.jpg" alt="product-3-img"
+            class="md:max-w-xs w-full md:rounded-lg slidelg display-imagelg-3 absolute top-0 z-0">
+
+          <!-- display image-4 -->
+          <img src="./ecommerce-product-page-main/images/image-product-4.jpg" alt="product-4-img"
+            class="md:max-w-xs w-full md:rounded-lg  slidelg display-imagelg-4  top-0 z-0">
+
+
+
+        </div>
+        <!--Thumbnail images  -->
+        <div class="thumbnail-imageslg  md:flex hidden flex-row gap-5 mt-7 z-0">
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+
+</html>

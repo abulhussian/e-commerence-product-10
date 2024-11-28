@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+  @apply border border-orange;
+}
+.overlay {
+  @apply bg-white opacity-30;
+}
