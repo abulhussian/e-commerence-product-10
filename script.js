@@ -177,10 +177,7 @@ const prevSlidelg = function () {
 };
 
 rightBtn.addEventListener("click", nextSlide);
-leftBtn.addEventListener("click", (e) => {
-  console.log("clicked");
-  prevSlide;
-});
+leftBtn.addEventListener("click", prevSlide);
 
 rightBtnlg.addEventListener("click", nextSlidelg);
 leftBtnlg.addEventListener("click", prevSlidelg);
