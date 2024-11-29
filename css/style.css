@@ -666,6 +666,14 @@ video {
   height: 100vh;
 }
 
+.h-1\/2 {
+  height: 50%;
+}
+
+.h-auto {
+  height: auto;
+}
+
 .h-16 {
   height: 4rem;
 }
@@ -1027,6 +1035,14 @@ video {
 
   .md\:h-\[320px\] {
     height: 320px;
+  }
+
+  .md\:h-0 {
+    height: 0px;
+  }
+
+  .md\:h-auto {
+    height: auto;
   }
 
   .md\:w-52 {

@@ -144,7 +144,6 @@ const nextSlide = function () {
   }
   gotoSlide(curSlide);
   activeImg(curSlide);
-  activeImglg(curSlide);
 };
 const nextSlidelg = function () {
   if (curSlide === maxslide - 1) {
@@ -152,7 +151,7 @@ const nextSlidelg = function () {
   } else {
     curSlide++;
   }
-
+  activeImglg(curSlide);
   gotoSlidelg(curSlide);
 };
 
@@ -164,7 +163,6 @@ const prevSlide = function () {
   }
   gotoSlide(curSlide);
   activeImg(curSlide);
-  activeImglg(curSlide);
 };
 const prevSlidelg = function () {
   if (curSlide === 0) {
@@ -173,6 +171,7 @@ const prevSlidelg = function () {
     curSlide--;
   }
   // gotoSlide(curSlide);
+  activeImglg(curSlide);
   gotoSlidelg(curSlide);
 };
 
