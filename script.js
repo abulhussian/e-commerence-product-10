@@ -216,12 +216,13 @@ closelg.addEventListener("click", function (e) {
   lighthouse.classList.add("hidden");
 });
 
-// slides.forEach((sl) => {
-//   console.log(sl);
-//   sl.addEventListener("click", function (e) {
-//     lighthouse.classList.remove("hidden");
-//   });
-// });
+slides.forEach((sl) => {
+  if (window.innerWidth > 765) {
+    sl.addEventListener("click", function (e) {
+      lighthouse.classList.remove("hidden");
+    });
+  }
+});
 
 function updateTotal(value) {
   number.textContent = value;
@@ -248,7 +249,9 @@ plusIcon.addEventListener("click", (e) => {
 });
 
 addToCart.addEventListener("click", (e) => {
-  incearse++;
+  if (incearse === 0) {
+    incearse = 1;
+  }
   emptyCart.classList.add("hidden");
   cartNumber.classList.remove("hidden");
   fillCart.classList.remove("hidden");
@@ -270,6 +273,6 @@ menu.addEventListener("click", (e) => mobileMenu.classList.remove("hidden"));
 mobileClose.addEventListener("click", (e) =>
   mobileMenu.classList.add("hidden")
 );
-ovelaylg.addEventListener("click", (e) =>
-  lighthouse.classList.remove("hidden")
-);
+// ovelaylg.addEventListener("click", (e) =>
+//   lighthouse.classList.remove("hidden")
+// );

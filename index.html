@@ -8,12 +8,13 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="./ecommerce-product-page-main/images/favicon-32x32.png">
 
-  <title>Frontend Mentor | E-commerce product page</title>
+  <title> E-commerce product page</title>
 
 </head>
 
 <body class="bg-paleOrange mx-auto overflow-x-hidden">
-  <div class="flex flex-col md:px-32 border-b">
+  <div class="flex flex-col md:px-32 border-b 
+   ">
     <!-- header -->
     <header class=" flex flex-row justify-between mt-5 px-2  ">
       <div class="flex flex-row gap-5  ">
@@ -25,15 +26,15 @@
           <img src="./ecommerce-product-page-main/images/logo.svg" alt="logo" class="h-5">
           <div class="options  md:flex hidden flex-row gap-7  ">
             <!-- collections -->
-            <a href="#" class="collections text-grayishBlue border-b pb-6 hover:border-b-orange ">Collections</a>
+            <a href="" class="collections text-grayishBlue border-b pb-6 hover:border-b-orange ">Collections</a>
             <!-- men -->
-            <a href="#" class="men text-grayishBlue hover:border-b pb-6 hover:border-b-orange ">Men</a>
+            <a href="" class="men text-grayishBlue hover:border-b pb-6 hover:border-b-orange ">Men</a>
             <!-- women -->
-            <a href="#" class=" women text-grayishBlue hover:border-b pb-6 hover:border-b-orange">Women</a>
+            <a href="" class=" women text-grayishBlue hover:border-b pb-6 hover:border-b-orange">Women</a>
             <!-- about -->
-            <a href="#" class=" about text-grayishBlue hover:border-b pb-6 hover:border-b-orange">About</a>
+            <a href="" class=" about text-grayishBlue hover:border-b pb-6 hover:border-b-orange">About</a>
             <!-- contact -->
-            <a href="#" class=" conatct text-grayishBlue hover:border-b pb-6 hover:border-b-orange">Contact</a>
+            <a href="" class=" conatct text-grayishBlue hover:border-b pb-6 hover:border-b-orange">Contact</a>
 
           </div>
         </div>
@@ -63,55 +64,52 @@
         <img src="./ecommerce-product-page-main/images/icon-close.svg" alt="icon-close" class="w-5 h-5">
       </div>
       <div class="options  flex flex-col mt-10 gap-3 ">
-        <h1 class="text-veryDarkBlue font-semibold">Collections</h1>
-        <h1 class="text-veryDarkBlue font-semibold">Men</h1>
-        <h1 class="text-veryDarkBlue font-semibold">Women</h1>
-        <h1 class="text-veryDarkBlue font-semibold">About</h1>
-        <h1 class="text-veryDarkBlue font-semibold">Contact</h1>
+        <a href="" class="text-veryDarkBlue font-semibold">Collections</a>
+        <a href="" class="text-veryDarkBlue font-semibold">Men</a>
+        <a href="" class="text-veryDarkBlue font-semibold">Women</a>
+        <a href="" class="text-veryDarkBlue font-semibold">About</a>
+        <a href="" class="text-veryDarkBlue font-semibold">Contact</a>
       </div>
 
     </div>
 
 
-    <section class="flex md:flex-row flex-col mt-4 md:mt-7 gap-5 md:gap-20  ">
-      <div class="left-section flex flex-col z-0 ">
+    <section class="flex md:flex-row flex-col mt-4 md:mt-7 gap-1 md:gap-20  ">
+      <div class="left-section flex flex-col  ">
         <!-- large-images -->
-        <div class="slider w-screen h-screen md:w-80 md:h-80 
-         relative flex flex-row overflow-hidden -z-10 ">
-          <div class="md:absolute md:w-[320px] md:h-[320px] md:block hidden overlay-lg md:z-50 -z-10 "></div>
+        <div class="slider md:max-w-sm max-w-screen-sm max-h-screen
+         relative flex flex-row overflow-hidden z-10  ">
+          <!-- <div class="md:absolute md:w-[320px] md:h-[320px] md:block hidden overlay-lg md:z-50 -z-10 "></div> -->
           <!-- display image-1 -->
-          <img src="./ecommerce-product-page-main/images/image-product-1.jpg" alt="product-1-img" class="w-screen slide
-             md:rounded-lg  display-image -z-10 absolute top-0">
+          <img src="./ecommerce-product-page-main/images/image-product-1.jpg" alt="product-1-img" class="w-screen  slide
+             md:rounded-lg  display-image absolute  md:absolute top-0">
           <!-- display image-2 -->
           <img src="./ecommerce-product-page-main/images/image-product-2.jpg" alt="product-2-img"
-            class="md:w-screen w-screen -z-10  slide md:rounded-lg display-image absolute top-0">
+            class=" w-screen   slide md:rounded-lg display-image absolute top-0">
           <!-- display image-3 -->
           <img src="./ecommerce-product-page-main/images/image-product-3.jpg" alt="product-3-img"
-            class="md:w-screen w-screen -z-10 md:rounded-lg slide display-image absolute top-0">
+            class=" w-screen  md:rounded-lg slide display-image absolute top-0">
           <!-- display image-4 -->
           <img src="./ecommerce-product-page-main/images/image-product-4.jpg" alt="product-4-img"
-            class="md:w-screen w-full -z-10 md:rounded-lg  slide display-image absolute top-0">
+            class=" w-screen  md:rounded-lg  slide display-image md:absolute block top-0">
 
           <button
-            class=" md:hidden block cursor-pointer  absolute left-slide-btn top-1/2 left-10 w-8 h-8 rounded-full bg-white flex justify-center  items-center -translate-x-1/2 ">
+            class=" md:hidden block cursor-pointer  absolute left-slide-btn top-1/3 left-10 w-8 h-8 rounded-full bg-white flex justify-center  items-center translate-x-1/2 ">
             <img src="./ecommerce-product-page-main/images/icon-next.svg" alt="icon-next"
               class="w-5 h-5 rotate-180 z-0 ">
           </button>
           <button
-            class=" md:hidden block cursor-pointer absolute right-slide-btn  top-1/2 right-10 w-8 h-8 rounded-full bg-white flex justify-center  items-center -translate-x-1/2 ">
+            class=" md:hidden block cursor-pointer absolute right-slide-btn  top-1/3 right-10 w-8 h-8 rounded-full bg-white flex justify-center  items-center translate-x-1/2 ">
             <img src="./ecommerce-product-page-main/images/icon-next.svg" alt="icon-next" class="w-5 h-5 z-0
            ">
           </button>
         </div>
-
-
-
         <!--Thumbnail images  -->
-        <div class="thumbnail-images md:flex hidden flex-row gap-5 mt-7">
+        <div class="thumbnail-images md:flex hidden flex-row md:gap-5 md:mt-7 ">
         </div>
         <!-- right side -->
       </div>
-      <div class="right-section flex flex-col mt-3 md:mt-6 p-5">
+      <div class="right-section flex flex-col mt-1 md:mt-6 p-5">
         <!-- para -->
 
         <p class="text-darkGrayishBlue tracking-widest">Sneaker Company</p>
@@ -200,8 +198,8 @@
 
     </div>
     <!-- lighthouse card -->
-    <div
-      class="flex lighthouse hidden  flex-col  md:bg-black md:bg-opacity-75 left-0 -z-0  absolute top-0 h-screen w-screen ">
+    <div class="flex lighthouse hidden
+     flex-col  md:bg-black md:bg-opacity-75 left-0 -z-0  absolute top-0 h-screen w-screen ">
       <div class=" flex flex-col mx-auto  mt-20 w-80 relative      ">
         <button
           class="  cursor-pointer absolute z-50 left-slide-btnlg left-0 top-1/3  w-8 h-8 rounded-full bg-white flex justify-center  items-center -translate-x-1/2 translate-y-1/2 ">
@@ -222,18 +220,18 @@
 
           <!-- display image-1 -->
           <img src="./ecommerce-product-page-main/images/image-product-1.jpg" alt="product-1-img" class="md:w-screen w-screen slidelg
-           md:rounded-lg  display-imagelg-1 absolute top-0 z-0">
+           md:rounded-lg  display-imagelg absolute top-0 z-0">
           <!-- display image-2 -->
           <img src="./ecommerce-product-page-main/images/image-product-2.jpg" alt="product-2-img"
-            class="md:max-w-xs w-full   slidelg md:rounded-lg display-imagelg-2 absolute top-0 z-0">
+            class="md:max-w-xs w-full   slidelg md:rounded-lg display-imagelg absolute top-0 z-0">
 
           <!-- display image-3 -->
           <img src="./ecommerce-product-page-main/images/image-product-3.jpg" alt="product-3-img"
-            class="md:max-w-xs w-full md:rounded-lg slidelg display-imagelg-3 absolute top-0 z-0">
+            class="md:max-w-xs w-full md:rounded-lg slidelg display-imagelg absolute top-0 z-0">
 
           <!-- display image-4 -->
           <img src="./ecommerce-product-page-main/images/image-product-4.jpg" alt="product-4-img"
-            class="md:max-w-xs w-full md:rounded-lg  slidelg display-imagelg-4  top-0 z-0">
+            class="md:max-w-xs w-full md:rounded-lg  slidelg display-imagelg  top-0 z-0">
 
 
 
@@ -246,7 +244,10 @@
     </div>
   </div>
   <script src="./script.js"></script>
+
 </body>
+
+
 
 
 </html>
